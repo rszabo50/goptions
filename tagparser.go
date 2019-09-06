@@ -19,6 +19,7 @@ var (
 )
 
 func parseStructField(fieldValue reflect.Value, tag string) (*Flag, error) {
+	fmt.Println(tag)
 	f := &Flag{
 		value:        fieldValue,
 		DefaultValue: fieldValue.Interface(),
